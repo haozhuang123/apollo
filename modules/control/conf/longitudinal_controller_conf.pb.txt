@@ -38,10 +38,10 @@ lat_controller_conf {
   mass_rl: 520
   mass_rr: 520
   eps: 0.01
-  matrix_q: 0.05
-  matrix_q: 0.0
-  matrix_q: 1.0
-  matrix_q: 0.0
+  matrix_q: 100.05
+  matrix_q: 10.0
+  matrix_q: 111.0
+  matrix_q: 10.0
   reverse_matrix_q: 0.0
   reverse_matrix_q: 0.0
   reverse_matrix_q: 0.0
@@ -125,28 +125,28 @@ lon_controller_conf {
   brake_minimum_action: 0.0
   throttle_minimum_action: 0.0
   speed_controller_input_limit: 2.0
-  station_error_limit: 2.0
-  preview_window: 20.0
+  station_error_limit: 200.0
+  preview_window: 2.0
   standstill_acceleration: -0.3
   enable_reverse_leadlag_compensation: false
   station_pid_conf {
     integrator_enable: false
     integrator_saturation_level: 0.0
-    kp: 0.0
+    kp: 100.0
     ki: 0.0
     kd: 0.0
   }
   low_speed_pid_conf {
     integrator_enable: true
     integrator_saturation_level: 0.0
-    kp: 0.0
+    kp: 100.0
     ki: 0.0
     kd: 0.0
   }
   high_speed_pid_conf {
     integrator_enable: true
     integrator_saturation_level: 0.0
-    kp: 0.0
+    kp: 100.0
     ki: 0.0
     kd: 0.0
   }
@@ -155,14 +155,14 @@ lon_controller_conf {
   reverse_station_pid_conf {
     integrator_enable: true
     integrator_saturation_level: 0.0
-    kp: 0.0
+    kp: 100.0
     ki: 0.0
     kd: 0.0
   }
   reverse_speed_pid_conf {
     integrator_enable: true
     integrator_saturation_level: 0.0
-    kp: 0.0
+    kp: 100.0
     ki: 0.0
     kd: 0.0
   }
